@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv')
 const nodemailer = require("nodemailer");
 
 async function main() {
@@ -21,9 +21,7 @@ async function main() {
     html: "<h1>Hello world?</h1>", 
   });
 
-  console.log("Message sent: %s", info.messageId);
 
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   
 }
 
